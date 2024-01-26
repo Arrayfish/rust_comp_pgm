@@ -17,8 +17,8 @@ fn main() {
     }else{
         a*(x-y)
     };
-    ans = ans.max(amari + c*2*x.min(y));
+    ans = ans.min(amari + c*2*x.min(y));
     // パターン3 全部c 
-    ans = ans.max(c*2*x.max(y));
-    println!(ans);
+    ans = ans.min(c*2*x.max(y));
+    println!("{}",ans);
 }
