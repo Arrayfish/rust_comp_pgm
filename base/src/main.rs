@@ -1,14 +1,8 @@
 use proconio::input;
 
 fn main() {
-    input! {
-        a: i32,
-        b: i32,
-    }
-    let c = a * b;
-    if c % 2 == 0{
-        println!("Even");
-    }else{
-        println!("Odd");
-    }
+    let mut a = 3; let mut b = 5;
+std::mem::swap(&mut a, &mut b);
+assert_eq!(a, 5);
+assert_eq!(b, 3);
 }
