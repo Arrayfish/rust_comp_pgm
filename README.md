@@ -7,7 +7,7 @@ https://github.com/rust-lang-ja/atcoder-proposal/
 ## コンテスト準備
 
 baseディレクトリをコピーする
-`cp base abcxxx`
+`cp -r base abcxxx`
 
 ## プログラム実行方法
 
