@@ -1,0 +1,25 @@
+{
+    // 開いている src/bin/*.rs をそのままデバッグ実行する（CodeLLDB）
+    // 標準入力はターミナルに直接入力する
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug current problem",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--manifest-path=${fileDirname}/../../Cargo.toml",
+                    "--bin=${fileBasenameNoExtension}"
+                ],
+                "filter": {
+                    "name": "${fileBasenameNoExtension}",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${fileDirname}/../.."
+        }
+    ]
+}

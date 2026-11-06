@@ -1,5 +1,4 @@
 [workspace]
-exclude = ["./xtask"]
 
 [profile.release]
 lto = true # コンパイル時間が著しく長くなってしまう場合は無し
@@ -76,6 +75,3 @@ text_io = "=0.1.12"
 rustc-hash = "=1.1.0"
 smallvec = { version = "=1.11.0", features = ["const_generics", "const_new", "write", "union", "serde", "arbitrary"] }
 # ---------------------------------------------------------------------
-
-[dev-dependencies]
-cli_test_dir = "0.1"
