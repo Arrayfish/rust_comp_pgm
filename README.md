@@ -8,7 +8,7 @@ https://github.com/rust-lang-ja/atcoder-proposal/
 
 ```
 rust_comp_pgm/
-├── rust-toolchain        # 全コンテスト共通 (1.74.0: rust-analyzer 対応のため)
+├── rust-toolchain.toml   # 全コンテスト共通 (1.74.0 + rust-analyzer コンポーネント)
 ├── .cargo/config.toml    # target/ をルートで共有 → 依存クレートのビルドは初回のみ
 ├── .vscode/launch.json   # 開いている問題ファイルをデバッグ実行
 ├── base/                 # テンプレート
